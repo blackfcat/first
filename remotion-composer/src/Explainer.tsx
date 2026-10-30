@@ -10,7 +10,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { loadFont } from "@remotion/google-fonts/SpaceGrotesk";
+import { loadSansFont as loadFont } from "./localFonts";
 
 // Resolve asset path — handle URLs, absolute paths (Windows/Unix), and public/ relative paths
 function resolveAsset(src: string): string {
@@ -596,7 +596,8 @@ const SceneRenderer: React.FC<{ cut: Cut; theme: ThemeConfig }> = ({ cut, theme 
       <ComparisonCard
         leftLabel={cut.leftLabel} rightLabel={cut.rightLabel}
         leftValue={cut.leftValue} rightValue={cut.rightValue}
-        title={cut.title} backgroundColor={bgColor} textColor={textColor}
+          title={cut.title} backgroundColor={bgColor} textColor={textColor}
+          cardBackgroundColor={theme.surfaceColor}
       />
     );
   }

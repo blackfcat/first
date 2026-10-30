@@ -11,7 +11,7 @@ import {
   useVideoConfig,
 } from "remotion";
 import React from "react";
-import { loadFont as loadPlayfair } from "@remotion/google-fonts/PlayfairDisplay";
+import { loadSerifFont as loadPlayfair } from "./localFonts";
 
 const { fontFamily: playfairFamily } = loadPlayfair("normal", {
   weights: ["400", "700"],

@@ -10,7 +10,7 @@ import {
   useVideoConfig,
 } from "remotion";
 import { getVideoMetadata } from "@remotion/media-utils";
-import { loadFont } from "@remotion/google-fonts/PlayfairDisplay";
+import { loadSerifFont as loadFont } from "./localFonts";
 
 // Editorial serif for the tagline — Playfair Display at its boldest weight.
 // Loaded once at module scope so every render reuses the same font face.
