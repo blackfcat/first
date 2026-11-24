@@ -1,0 +1,6 @@
+[submodule "collections/drama-skills"]
+	path = collections/drama-skills
+	url = https://github.com/zenstory-ai/drama-skills.git
+[submodule "collections/oh-story-claudecode"]
+	path = collections/oh-story-claudecode
+	url = https://github.com/zenstory-ai/oh-story-claudecode.git
